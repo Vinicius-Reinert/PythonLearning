@@ -8,7 +8,7 @@ from email.mime.text import MIMEText
 host = "smtp.office365.com"
 port = 587
 username = "test@sipoli.onmicrosoft.com"
-password = "M1cr0s0ft"
+password = "Password"
 from_email = username
 
 
@@ -62,7 +62,7 @@ email_conn.ehlo()
 email_conn.starttls()
 try:
     email_conn.login(username,password)
-    email_conn.sendmail(from_email, "vinicius@sipoli.onmicrosoft.com", msg.as_string())
+    email_conn.sendmail(from_email, "test2@sipoli.onmicrosoft.com", msg.as_string())
 except SMTPAuthenticationError:
     print("Could not login")
 except:
