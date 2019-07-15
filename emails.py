@@ -2,8 +2,8 @@ from smtplib import SMTP, SMTPAuthenticationError, SMTPException
 
 host = "smtp.office365.com"
 port = 587
-username = "test@sipoli.onmicrosoft.com"
-password = "M1cr0s0ft"
+username = "test2@sipoli.onmicrosoft.com"
+password = "password"
 from_email = username
 
 email_conn = SMTP(host, port)
